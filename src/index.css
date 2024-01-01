@@ -1,0 +1,41 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+}
+
+input,
+button {
+	border: 1px solid #ddd;
+	padding: 4px 12px;
+	min-height: 34px;
+	border-radius: 7px;
+}
+
+input:focus,
+button:hover {
+	outline: none;
+	border: 1px solid #bbb;
+	box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
